@@ -16,7 +16,7 @@ RUN npm install
 # Bundle app source
 COPY . $APP
 
-RUN apk remove make gcc libc-dev g++
+RUN apk delete make gcc libc-dev g++
 
 EXPOSE 8080
 CMD [ "npm", "start" ]
