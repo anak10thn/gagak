@@ -1,7 +1,7 @@
 ---
 services:
   redis:
-    image: redis
+    image: aksaramaya/tc-redis
   web:
     image: aksaramaya/gagak
     ports:

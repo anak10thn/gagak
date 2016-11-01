@@ -17,7 +17,7 @@
     },
     "scripts":
     {
-        "start": "node pushd.js"
+        "start": "node gagak.js"
     },
     "engines":
     {
