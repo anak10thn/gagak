@@ -8,7 +8,7 @@ pesan yang dikirim keservice squid.io menggunakan UDP,
 ```
 <?php
 $squidHost = '127.0.0.1';
-$squiddPort = 8080;
+$squidPort = 8080;
 $eventName = 'pesan-id1234';
 $payload = array
 (
@@ -30,5 +30,7 @@ data: {"event":"pesan-id1234","title":{},"message":{"default":"ah kamu"},"data":
 
 ###demo :###
 
-client : http://jsbin.com/mekas/1/edit
-server : http://squid.ignsdk.web.id/notify.php
+```bash
+$ cd example
+$ php -S 0.0.0.0:8181
+```

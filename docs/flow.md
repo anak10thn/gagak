@@ -1,30 +1,32 @@
 dapatkan idnya dulu
 ```bash
-curl -d proto=apns-dev \
--d token=183fcbd65133121a1ea8dfeeb6890ae5d1380f57f25af251662387a98affc9d1 \
+curl -d proto=gcm \
+-d token=cKXmAHlVj_4:APA91bE2nedrRsCmJqmkvxbMVhyfcWxjaew1_Ti3cLqxVhD6fpq27hUded93IiJJ1DCFbWPtQKXucVRzRPESTPtyAhvwOOCY2_DDSESan_L0D_18Mv1LmLxvyzfrtssHcxzlKKKFjFHh \
 -d lang=en \
 -d badge=0 \
-http://localhost:6060/subscribers
+http://localhost:8080/subscribers
 ```
 
 respons
 ```bash
 {
-  "proto": "apns-dev",
-  "token": "183fcbd65133121a1ea8dfeeb6890ae5d1380f57f25af251662387a98affc9d1",
+  "proto": "gcm",
+  "token": "cKXmAHlVj_4:APA91bE2nedrRsCmJqmkvxbMVhyfcWxjaew1_Ti3cLqxVhD6fpq27hUded93IiJJ1DCFbWPtQKXucVRzRPESTPtyAhvwOOCY2_DDSESan_L0D_18Mv1LmLxvyzfrtssHcxzlKKKFjFHh",
   "lang": "en",
   "badge": 0,
-  "updated": 1395492159,
-  "created": 1395492159,
-  "id": "zP_nihP_Qc4"
+  "created": 1477999280,
+  "updated": 1477999605,
+  "id": "VUZ4lhMTQ-o"
 }
 ```
 
 lakukan subscribe
 ```bash
 curl -X POST http://localhost:6060/subscriber/[id_subscribe]/subscriptions/[id_user]
+```
+```bash
 contoh
-curl -X POST http://localhost:6060/subscriber/zP_nihP_Qc4/subscriptions/904
+curl -X POST http://localhost:6060/subscriber/VUZ4lhMTQ-o/subscriptions/pesan-id1234
 ```
 
 refresh id setiap restart apps
