@@ -2,9 +2,9 @@
 (function() {
   exports.server = {
     redis_port: 6379,
-    redis_host: 'localhost',
-    tcp_port: 80,
-    udp_port: 80,
+    redis_host: 'redis',
+    tcp_port: 8080,
+    udp_port: 8080,
     access_log: true,
     acl: {
       publish: ['127.0.0.1', '10.0.0.0/8', '172.16.0.0/12', '192.168.0.0/16']

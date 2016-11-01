@@ -3,29 +3,17 @@
     indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
 
   express = require('express');
-
   bodyParser = require('body-parser');
-
   dgram = require('dgram');
-
   zlib = require('zlib');
-
   url = require('url');
-
   Netmask = require('netmask').Netmask;
-
   settings = require('./settings');
-
   Subscriber = require('./lib/subscriber').Subscriber;
-
   EventPublisher = require('./lib/eventpublisher').EventPublisher;
-
   Event = require('./lib/event').Event;
-
   PushServices = require('./lib/pushservices').PushServices;
-
   Payload = require('./lib/payload').Payload;
-
   logger = require('winston');
 
   if (settings.server.redis_socket != null) {
