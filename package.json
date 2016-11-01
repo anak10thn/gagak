@@ -1,0 +1,51 @@
+{
+    "author": "ibnu Yahya <anak10thn@gmail.com>",
+    "name": "Gagak",
+    "description": "Blazing fast multi-protocol mobile push notification service",
+    "version": "2.0",
+    "homepage": "https://aksaramaya.com",
+    "keywords": ["push", "notification", "apns", "c2dm", "mpns", "ios", "android", "windows", "phone"],
+    "repository":
+    {
+        "type": "git",
+        "url": "git://github.com/aksaramaya.com/gagak.git"
+    },
+    "preferGlobal": "true",
+    "directories":
+    {
+        "lib": "./lib"
+    },
+    "scripts":
+    {
+        "start": "node pushd.js"
+    },
+    "engines":
+    {
+        "node": "~0.10.0"
+    },
+    "dependencies":
+    {
+        "apn":"*",
+        "c2dm":"*",
+        "node-gcm":"*",
+        "mpns":"*",
+        "async":"*",
+        "express": "~3.20.2",
+        "body-parser":"*",
+        "hiredis":"*",
+        "redis":"*",
+        "netmask":"*",
+        "winston":"*",
+        "wns": "git+https://github.com/futurice/wns.git#28bfe39a3be8c64f3d72b7c7a5cac77c049b137a"
+    },
+    "devDependencies":
+    {
+        "mocha": "*",
+        "should": "*"
+    },
+    "licenses":
+    [{
+      "type": "MIT",
+      "url": "https://github.com/aksaramaya/gagak/raw/master/LICENSE"
+    }]
+}
