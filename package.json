@@ -2,7 +2,7 @@
     "author": "ibnu Yahya <anak10thn@gmail.com>",
     "name": "Gagak",
     "description": "Blazing fast multi-protocol mobile push notification service",
-    "version": "2.0",
+    "version": "2.0.1",
     "homepage": "https://aksaramaya.com",
     "keywords": ["push", "notification", "apns", "c2dm", "mpns", "ios", "android", "windows", "phone"],
     "repository":

@@ -1,7 +1,10 @@
-FROM anak10thn/tinycore-nodejs
+FROM aksaramaya/base
 
 # set environment
 ENV APP=/opt/gagak
+ENV NODE_PATH=/usr/lib/node_modules
+
+RUN apk add --update git nodejs python make gcc libc-dev g++
 # Create app directory
 RUN mkdir -p $APP
 WORKDIR $APP
