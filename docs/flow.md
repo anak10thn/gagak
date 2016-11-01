@@ -1,4 +1,4 @@
-dapatkan idnya dulu
+## dapatkan idnya dulu
 ```bash
 curl -d proto=gcm \
 -d token=cKXmAHlVj_4:APA91bE2nedrRsCmJqmkvxbMVhyfcWxjaew1_Ti3cLqxVhD6fpq27hUded93IiJJ1DCFbWPtQKXucVRzRPESTPtyAhvwOOCY2_DDSESan_L0D_18Mv1LmLxvyzfrtssHcxzlKKKFjFHh \
@@ -7,7 +7,7 @@ curl -d proto=gcm \
 http://localhost:8080/subscribers
 ```
 
-respons
+### respons
 ```bash
 {
   "proto": "gcm",
@@ -20,7 +20,7 @@ respons
 }
 ```
 
-lakukan subscribe
+## lakukan subscribe
 ```bash
 curl -X POST http://localhost:8080/subscriber/[id_subscribe]/subscriptions/[id_user]
 ```
@@ -29,7 +29,7 @@ contoh
 curl -X POST http://localhost:8080/subscriber/VUZ4lhMTQ-o/subscriptions/pesan-id1234
 ```
 
-refresh id setiap restart apps
+## refresh id setiap restart apps
 ```bash
 curl -d lang=en -d badge=0 http://localhost:8080/subscriber/[id_subscribe]
 ```
