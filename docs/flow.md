@@ -22,14 +22,14 @@ respons
 
 lakukan subscribe
 ```bash
-curl -X POST http://localhost:6060/subscriber/[id_subscribe]/subscriptions/[id_user]
+curl -X POST http://localhost:8080/subscriber/[id_subscribe]/subscriptions/[id_user]
 ```
 ```bash
 contoh
-curl -X POST http://localhost:6060/subscriber/VUZ4lhMTQ-o/subscriptions/pesan-id1234
+curl -X POST http://localhost:8080/subscriber/VUZ4lhMTQ-o/subscriptions/pesan-id1234
 ```
 
 refresh id setiap restart apps
 ```bash
-curl -d lang=en -d badge=0 http://localhost:6060/subscriber/[id_subscribe]
+curl -d lang=en -d badge=0 http://localhost:8080/subscriber/[id_subscribe]
 ```
