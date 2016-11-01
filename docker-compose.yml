@@ -6,6 +6,7 @@ services:
     image: aksaramaya/gagak
     ports:
       - "8080:8080"
+      - "8080:8080/udp"
     volumes:
       - ./settings.js:/opt/gagak/settings.js
     depends_on:
