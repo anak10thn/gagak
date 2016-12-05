@@ -11,7 +11,7 @@ WORKDIR $APP
 
 # Install app dependencies
 COPY package.json $APP
-RUN npm install
+RUN npm install;ln -s /etc/config/settings.js /opt/gagak/settings.js;
 
 # Bundle app source
 COPY . $APP
