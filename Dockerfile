@@ -1,4 +1,4 @@
-FROM aksaramaya/base
+FROM alpine
 
 # set environment
 ENV APP=/opt/gagak
